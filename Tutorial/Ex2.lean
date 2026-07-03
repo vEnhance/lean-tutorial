@@ -9,4 +9,13 @@ If x, y, z are complex numbers such that
 show that x = y = z = 1.
 -/
 
-/- theorem usamo1973_4 (x y z : ℂ) : ... -/
+theorem usamo1973_4 (x y z : ℂ) :
+  (
+    x + y + z = 3 ∧
+    x^2 + y^2 + z^2 = 3 ∧
+    x^3 + y^3 + z^3 = 3
+  ) → (x = 1 ∧ y = 1 ∧ z = 1) := by
+  grind =>
+    cases #0ac7
+    · ring
+    · cases #e2d9 <;> ring
