@@ -14,7 +14,7 @@ Use mul_assoc and mul_comm to manually rewrite abc = cba
 theorem abc_conjecture (a b c : ℝ) : a * b * c = c * b * a := by
   sorry
 
-/- EXAMPLE 2 (USAMO 1973, Problem 4)
+/- EXAMPLE 2 (USAMO 1973/4)
 
 If x, y, z are complex numbers such that
   x + y + z = 3
