@@ -1,0 +1,43 @@
+main goals for today:
+- learn what lean is at a high level
+- see what lean for math looks like with a few toy examples
+
+resource links:
+- mathematics in lean (MIL) online textbook: https://leanprover-community.github.io/mathematics_in_lean/
+- mathlib4 documentation: https://leanprover-community.github.io/mathlib4_docs/index.html
+- leanexplore: https://leanexplore.com/
+
+## introduction
+
+- what is lean?
+    - a functional programming language
+    - used for “formal verification”
+- what is formal verification?
+    - you can write mathematical proofs in lean
+    - lean will check whether or not the proof is correct
+        - won’t “compile” unless it is correct
+    - correctness is derived from personal definitions, and definitions/axioms in mathlib
+        - someone has to define the natural numbers “correctly” in mathlib
+        - lots of choices for how to define things
+- for mathematicians, the key resources:
+    - mathlib4: actively developed library with many the math primitives
+        https://leanprover-community.github.io/mathlib4_docs/index.html
+    - mathematics in lean textbook:
+        https://leanprover-community.github.io/mathematics_in_lean/
+    - lean explore: search for mathlib4 theorems by natural language
+        https://leanexplore.com/
+
+
+## things in lean
+- see HYPOTHESES and GOALS in the side panel
+- global GOAL is just the theorem statement
+- you can create new local GOALS by manually creating/naming hypothesis (think lemma) that you then need to prove
+- besides writing intermediate lemmas and defns, your job is to close out goals using TACTICS (rewrite, apply, rcases, etc)
+- you can use these hypothesis to close out other goals
+- can use `sorry` in place of a valid proof, lean will compile it
+
+## examples
+
+- writing definitions
+- writing theorems
+- look at the side panel (`Lean InfoView`) for goals
